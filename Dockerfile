@@ -2,7 +2,7 @@ FROM caddy:2.6.2-builder AS builder
 
 RUN xcaddy build \
     --with github.com/caddy-dns/porkbun \
-    --with github.com/pteich/caddy-tlsconsul \
+    --with github.com/pteich/caddy-tlsconsul
 
 FROM caddy:2.6.2
 
